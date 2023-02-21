@@ -18,22 +18,22 @@ export const help = async (args: string[]): Promise<string> => {
 \n${c}\n
 [tab]: trigger completion.
 [ctrl+l]/clear: clear terminal.\n
-Type 'sumfetch' to display summary.
+Type 'summary' to display summary.
 `;
 };
 
 // Redirection
-export const repo = async (args: string[]): Promise<string> => {
-  window.open(`${config.repo}`);
-  return 'Opening Github repository...';
-};
+// export const repo = async (args: string[]): Promise<string> => {
+//   window.open(`${config.repo}`);
+//   return 'Opening Github repository...';
+// };
 
 // About
 export const about = async (args: string[]): Promise<string> => {
   return `Hi, I am ${config.name}. 
 Welcome to my website!
 More about me:
-'sumfetch' - short summary.
+'summary' - short summary.
 'resume' - my latest resume.
 'readme' - my github readme.`;
 };
@@ -44,13 +44,13 @@ export const resume = async (args: string[]): Promise<string> => {
 };
 
 // Donate
-export const donate = async (args: string[]): Promise<string> => {
-  return `thank you for your interest. 
-here are the ways you can support my work:
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-`;
-};
+// export const donate = async (args: string[]): Promise<string> => {
+//   return `thank you for your interest. 
+// here are the ways you can support my work:
+// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
+// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
+// `;
+// };
 
 // Contact
 export const email = async (args: string[]): Promise<string> => {
@@ -109,8 +109,7 @@ directories`;
 };
 
 export const cd = async (args: string[]): Promise<string> => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
+  return `Can't you read? The directories are FAKE!`;
 };
 
 export const date = async (args: string[]): Promise<string> => {
@@ -141,17 +140,15 @@ export const sudo = async (args?: string[]): Promise<string> => {
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
-
+  █████╗ ██████╗  █████╗ ███╗   ███╗    ███████╗██╗  ██╗██╗   ██╗ █████╗ ██╗   ██╗████████╗ ██████╗ 
+  ██╔══██╗██╔══██╗██╔══██╗████╗ ████║    ██╔════╝██║  ██║██║   ██║██╔══██╗╚██╗ ██╔╝╚══██╔══╝██╔═══██╗
+  ███████║██║  ██║███████║██╔████╔██║    ███████╗███████║██║   ██║███████║ ╚████╔╝    ██║   ██║   ██║
+  ██╔══██║██║  ██║██╔══██║██║╚██╔╝██║    ╚════██║██╔══██║██║   ██║██╔══██║  ╚██╔╝     ██║   ██║   ██║
+  ██║  ██║██████╔╝██║  ██║██║ ╚═╝ ██║    ███████║██║  ██║╚██████╔╝██║  ██║   ██║      ██║   ╚██████╔╝
+  ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝    ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝    ╚═════╝ 
+                                                                                                     
 Type 'help' to see the list of available commands.
-Type 'sumfetch' to display summary.
-Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
-`;
+Type 'summary' to display summary.`
+//Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
+//`;
 };
