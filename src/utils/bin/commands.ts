@@ -38,7 +38,7 @@ More about me:
 };
 
 export const resume = async (args: string[]): Promise<string> => {
-  window.open(`${config.resume_url}`);
+  window.open("https://github.com/AShuayto/LiveTerm/blob/main/adam_shuayto_resume.pdf");
   return 'Opening resume...';
 };
 
