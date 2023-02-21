@@ -34,8 +34,7 @@ export const about = async (args: string[]): Promise<string> => {
 Welcome to my website!
 More about me:
 'summary' - short summary.
-'resume' - my latest resume.
-'readme' - my github readme.`;
+'resume' - my latest resume.`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
@@ -109,7 +108,10 @@ directories`;
 };
 
 export const cd = async (args: string[]): Promise<string> => {
-  return `Can't you read? The directories are FAKE!`;
+  return `
+Can't you read? The directories are FAKE! 
+
+Try 'help' for more options.`;
 };
 
 export const date = async (args: string[]): Promise<string> => {
