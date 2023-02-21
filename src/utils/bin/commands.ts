@@ -30,8 +30,9 @@ Type 'summary' to display summary.
 
 // About
 export const about = async (args: string[]): Promise<string> => {
-  return `Hi, I am ${config.name}. 
-Welcome to my website!
+  return `Hello, It's me ${config.name}. 
+I'm a cloud data engineer that thrives on learning.
+Please email any questions you might have!
 More about me:
 'summary' - short summary.
 'resume' - my latest resume.`;
@@ -57,11 +58,11 @@ export const email = async (args: string[]): Promise<string> => {
   return `Opening mailto:${config.email}...`;
 };
 
-export const github = async (args: string[]): Promise<string> => {
-  window.open(`https://github.com/${config.social.github}/`);
+// export const github = async (args: string[]): Promise<string> => {
+//   window.open(`https://github.com/${config.social.github}/`);
 
-  return 'Opening github...';
-};
+//   return 'Opening github...';
+// };
 
 export const linkedin = async (args: string[]): Promise<string> => {
   window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
