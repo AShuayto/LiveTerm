@@ -30,8 +30,11 @@ Type 'summary' to display summary.
 
 // About
 export const about = async (args: string[]): Promise<string> => {
-  return `Hello, It's me ${config.name}. 
-I'm a cloud data engineer that thrives on learning.
+  return `Hello, It's me ${config.name}! 
+A cloud data engineer that truly thrives on learning.
+I especially love applying my learnings into different fields.
+I have tons of hobbies including 3D printing and home automation.
+A recent project of mine was creating my own PCB for automating my blinds.
 Please email any questions you might have!
 More about me:
 'summary' - short summary.
@@ -154,6 +157,23 @@ export const banner = (args?: string[]): string => {
   ██╔══██║██║  ██║██╔══██║██║╚██╔╝██║    ╚════██║██╔══██║██║   ██║██╔══██║  ╚██╔╝     ██║   ██║   ██║
   ██║  ██║██████╔╝██║  ██║██║ ╚═╝ ██║    ███████║██║  ██║╚██████╔╝██║  ██║   ██║      ██║   ╚██████╔╝
   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝    ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝    ╚═════╝ 
+
+           ▄▓▓▓▓▓▓▓▓▓▓▓▓▓▓▄                  Summary
+        ▄▓▓▀ ▄▓▓▀▓▓▓▀▓▓▄ ▀▀▓▓▄              -----------
+      ▓▓▀  ▄▓▀   ▐▓▓  ▀▓▓    ▓▓▄             ABOUT
+    ▄▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓            ${config.name}
+   ▓▓     ▓▓▓    ▐▓▓    ▐▓▓     ▓▓           <u><a href="${config.resume_url}" target="_blank">Resume</a></u>
+▐▓▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▓       
+▐▓                                 ▐▓       -----------
+▐▓        > Hello There!           ▐▓        CONTACT 
+▐▓                                 ▐▓        <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
+▐▓▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▓        <u><a href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin.com/in/${config.social.linkedin}</a></u>
+   ▓▓      ▐▓▓    ▓▓    ▐▓▓     ▓▓          -----------
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓           
+      ▓▓▓   ▐▓▓   ▓▓   ▓▓▓   ▓▓▀            
+        ▀▓▓▄▄ ▀▓▓▄▓▓▄▓▓▓▄▄▓▓▀               
+            ▀▓▓▓▓▓▓▓▓▓▓▓▀▀                  
+
                                                                                                      
 Type 'help' to see the list of available commands.
 Type 'summary' to display summary.`
